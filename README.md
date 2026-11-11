@@ -10,9 +10,13 @@ xApp reallocates the radio resources of a 5G cell, every second.**
 > is confirmed, the URLLC slice gets about 80 % of the cell, its latency drops back under 10 ms,
 > and the agent checks the result against the operator's numbers.
 
-Personal research and engineering project by **Souhail Bourhim**. Everything runs on one laptop:
+Project of the Smart ICT programme (3rd year) at INPT, Rabat, by **Souhail Bourhim** and
+**Ghita Boulmani**, supervised by **Pr. Mustapha Benjillali**. Everything runs on one laptop:
 a simulated cell, an RL controller, an 8B LLM on the local GPU, and a real OpenAirInterface 5G
 testbed in Docker.
+
+This snapshot stops at the end of phase 3 of the work plan (M07b). Progress report (French):
+[docs/Rapport_avancement_RIC_ORAN.pdf](docs/Rapport_avancement_RIC_ORAN.pdf).
 
 ![Live demo: the RL xApp serving an operator intent](docs/learn/img/M04b-grafana-after.png)
 *Live run (Grafana). An intent arrives during a URLLC traffic surge: the RL xApp gives URLLC
@@ -265,6 +269,9 @@ everything in order, and `uv run python -m xapps.kpm_monitor` fills the KPI stor
 | [tests/](tests/) | pytest, including one test per hard invariant |
 | [docs/](docs/) | Plan, decisions, learning notes, design document |
 
-## Contact
+## Authors
 
-Souhail Bourhim: [GitHub](https://github.com/SouhailBourhim)
+- Souhail Bourhim: [GitHub](https://github.com/SouhailBourhim)
+- Ghita Boulmani
+
+Supervised by Pr. Mustapha Benjillali, INPT, Rabat.
